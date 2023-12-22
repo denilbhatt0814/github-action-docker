@@ -1,12 +1,12 @@
-var http = require('http')
+var http = require("http");
 
-var port = 4000
+var port = 4001;
 
 var server = http.createServer(function (request, response) {
-  response.writeHead(200, {'Content-Type': 'text/plain'})
-  response.end('Hello World\n')
-})
+  response.writeHead(200, { "Content-Type": "text/plain" });
+  response.end("Hello World\n");
+});
 
-server.listen(port)
+server.listen(port);
 
-console.log('Server running at http://localhost:' + port)
+console.log("Server running at http://localhost:" + port);
